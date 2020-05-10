@@ -1,0 +1,140 @@
+body {
+	font-family: 'Balsamiq Sans', cursive;
+	color: #3d1718;
+	background: linear-gradient(135deg, #FFDDD6 , #FFDDD6 50%, #FFF9ED 20%);
+    background-size: 20px 20px;
+}
+
+.navbar {	
+    background-color: #ff98b0;
+    box-shadow: 0 7px 5px #353333;
+    width: 100%;
+    height:10%;	
+    border-radius: 15px;
+    display:flex;
+}  
+
+.myicon {	
+    width: 50px;
+    margin: auto 10px;
+}
+
+.nav2 {
+    flex-grow: 1;
+}
+
+.navbar a.burger-icon {
+    display: none;
+}
+
+.navbar ul{
+    display: inline;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;  
+}
+
+.navbar li:last-child{
+    float:right;
+}
+
+.navbar li a {
+    color: #e05575;
+    display: block;
+    font-size: 20px;
+	margin: 15px;
+	text-decoration: none;
+}
+
+.navbar a:hover{
+    color: #bd2d4e;
+}
+
+label {
+    text-align: right;
+    margin: 3px;
+    font-size: 20px;
+}
+
+input {
+    height: 20px;
+    padding: 5px;  
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 16px;
+    border: 1.5px solid #fd88a7;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(255, 221, 214, 0.521);
+    color:#533637;
+}
+
+button {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 16px;
+    background-color: #ff7096;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 3px #8d6771c4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+  
+button:active {
+    background-color: #ff7096;
+    box-shadow: 0 0 #8d6771c4;
+    transform: translateX(1px) translateY(3px);
+}
+
+button:focus-within {
+    outline: none;
+}
+
+@media (max-width: 980px){  
+    .myicon {	
+        width: 75px;
+        height: 75px;
+        margin: 7px 10px;
+    }
+
+    .navbar a.burger-icon {
+        display: block;
+        float:right;
+        margin: auto 20px;
+        font-size: 60px;
+        color: #e05575;
+    }
+
+    .navbar li{
+        width:98%;
+        text-align: center;
+        background: rgba(255, 221, 214, 0.521);
+        border-radius: 15px;
+        margin: 1%;
+    }
+
+    .navbar li a {
+        font-size: 36px;
+        display: block;
+    }
+      
+    label{
+        font-size: 36px;
+    }
+
+    input{
+        font-size: 36px;
+        padding:15px;
+    }
+
+    button{
+        font-size: 36px;
+    }
+}

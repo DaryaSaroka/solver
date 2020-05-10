@@ -1,0 +1,212 @@
+main {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto;  
+    grid-row-gap: 10px; 
+}
+
+.crossword-setting{
+    margin: 15px auto;
+	display: grid;
+    grid-template-rows: 1fr 1fr auto;
+    grid-template-columns: 45% 55%;
+    width: 25%;
+    grid-row-gap: 10px;
+    border-radius: 20px;
+}
+
+.crossword-id {
+    margin: 10px auto;
+    grid-column:1/-1;  
+    font-size: 20px;
+}
+
+.crossword-setting input{
+    margin: auto 0;
+}
+
+.crossword-setting .size-setting{
+    display: flex;
+}
+
+.size-setting input{
+    width: 20px;
+}
+
+.crossword-setting label{
+    margin: auto 0;
+}
+
+.crossword-setting button{
+    flex-grow:1;
+    margin-left: 10px;
+}
+
+.solving {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.creating{
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    font-family: 'Comfortaa', cursive;
+	color: #3d1718;
+    border-collapse: separate;
+    border-spacing: 3px;
+    background: #ffc5d4;
+    box-shadow: 0 10px 10px #df4e70;
+    border-radius: 5px;
+}
+
+td {
+    background: #fab7c9;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+td b {
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    font-size: 12px;
+    color: #555;
+    margin: -2px auto auto 1px;
+}
+
+td input[type=text]{
+    text-align:center;
+    width:20px;
+    border:none;
+    background:transparent;
+    font-size: 20px;
+    margin-left:2.5px;
+}
+
+tr td:not(:empty){
+    background: #fd88a7;
+}
+
+td:hover {
+	background:linear-gradient(45deg, #fab7c9, #ff82a3);
+}
+
+.popup-form{
+    padding: 10px;   
+    border-radius:10px;
+    display: flex;
+    flex-direction:column;
+    margin: 10px;
+    background: #ffc5d6b2;
+    border: 1.5px solid #ff98b0;
+    visibility: visible;/*hidden, если не выбирать слово*/
+}
+
+.close{	
+    margin:0 0 0 auto;
+    cursor: pointer;
+    position: relative;
+    padding: 0 5px;
+}
+
+#current-word{
+    margin:0 auto;
+}
+
+textarea{
+    margin: 10px;
+    font-family: 'Balsamiq Sans', cursive;
+	color: #3d1718;
+    font-size: 15px;
+    resize: none;
+}
+
+.popup-form button{
+    margin:5px;
+}
+
+.ready{
+    margin: 5px auto;
+}
+
+.condition{
+    width:40%;
+    display: flex;
+    flex-direction:column;
+}
+
+.questions-block{
+    font-family: 'Comfortaa', cursive;
+    background:#FFDDD6;
+    border-radius:10px;
+    border: 3px solid #ff9fb5;
+    margin: 10px 0;
+    padding:0px 5px 20px 15px;
+}
+
+@media (max-width: 980px){
+    .crossword-setting{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 50% 50%;
+        width: 60%;
+        font-size: 36px;
+    }
+    
+    .size-setting input{
+        width: 50px;
+    }
+
+    .creating{
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+
+    .creating table, .popup-form{
+        margin:10px auto;
+    }
+    
+    table {
+        border-spacing: 5px;
+        border-radius: 15px;
+        margin: 20px auto;
+    }
+
+    td {
+        width: 60px;
+        height: 60px;
+        border-radius: 7px;
+    }
+
+    td b {
+        font-size:20px; 
+    }
+    
+    td input[type=text]{
+        font-size: 30px;
+    }
+    
+    .popup-form{
+        padding:20px;    
+        border-radius:15px;
+    }
+
+    i{
+        font-size: 36px;
+    }
+
+    .condition{
+        width:80%;
+    }
+
+    .questions-block{
+        border-radius:20px;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+}
+
